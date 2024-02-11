@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Happy Valentine's Day!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Happy Valentine's Day!</h1>
+  <div class="heart">
+    <div class="left-side"></div>
+    <div class="right-side"></div>
+  </div>
+  <p>Mahal,</p>
+  <p>Words can't express how much I love you...</p>
+  <p>You are...</p>
+  <ul>
+    <li>Amazing</li>
+    <li>Kind</li>
+    <li>Smart</li>
+    <li>And so much more!</li>
+  </ul>
+  <p>Thank you for your love </p>
+  <p>Mahal,</p>
+  <p>I Love You Sobra</p>
+
+</body>
+</html>
+<style>
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f78da7;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+  animation: heartbeat 1s infinite;
+   background-image: url("http://clipart-library.com/images/rcLneqK7i.jpg");
+   background-position: center; /* Adjust as needed */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-radius: 80% 0 0 80%;
+}
+
+.left-side {
+  background-color: #ff0000;
+ transform: skewX(90deg);
+}
+
+.right-side {
+  background-color: #ff0000;
+  right: 0;
+  transform: skewX(45deg);
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+</style>
